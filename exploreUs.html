@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Paradise - Your Trusted Pet Shop</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f5f1e7;
+            font-family: 'Poppins', sans-serif;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+        }
+        .navbar {
+            background-color: #005f73 !important;
+        }
+        .navbar-brand {
+            color: #ee9b00 !important;
+            font-size: 30px;
+            font-weight: 600;
+        }
+         .nav-link {
+            color: #ee9b00 !important;
+            font-size: 20px;
+            font-weight: 600;
+        }
+        .navbar-brand:hover, .nav-link:hover {
+            color: #ffdd57 !important;
+        }
+        .hero {
+            text-align: center;
+            padding: 30px 0;
+        }
+        .carousel {
+            display: flex;
+            overflow: hidden;
+            width: 100%;
+            position: relative;
+        }
+        .carousel-container {
+            display: flex;
+        }
+        .card {
+            flex: 0 0 19%;
+            margin: 6px;
+            border-radius: 15px;
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+            background-color: white;
+        }
+        .card img {
+            height: 250px;
+            object-fit: cover;
+        }
+        .card-body {
+            background-color:#faf3dd;
+            color: #333;
+            text-align: center;
+        }
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+        }
+        .footer {
+            background-color: #005f73;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 50px;
+        }
+        .footer a {
+            color: #ffdd57;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .footer a:hover {
+            color: #ee9b00;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Pawfect Haven</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-bs-toggle="dropdown">Categories</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="parrots.html">Parrots</a></li>
+                            <li><a class="dropdown-item" href="cats.html">Cats</a></li>
+                            <li><a class="dropdown-item" href="dogs.html">Dogs</a></li>
+                            <li><a class="dropdown-item" href="ducks.html">Ducks</a></li>
+                            <li><a class="dropdown-item" href="chicks.html">Chicks</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="aboutus.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="whyShop.html">Why Shop Animal</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="hero">
+            <h1>Welcome to Pawfect Haven</h1>
+            <p>Your one-step shop for finding your perfect pet companion.</p>
+            <p><b>Categories we provide are:</b></p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="carousel">
+            <div class="carousel-container">
+                <div class="card">
+                    <img src="p4.jpg" class="card-img-top" alt="Parrots">
+                    <div class="card-body">
+                        <h5 class="card-title">Parrots</h5>
+                        <p>Colorful and intelligent, parrots make wonderful talking companions.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="c2.jpg" class="card-img-top" alt="Cats">
+                    <div class="card-body">
+                        <h5 class="card-title">Cats</h5>
+                        <p>Playful, independent, and full of personality, cats are perfect for any home.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="d5.jpg" class="card-img-top" alt="Dogs">
+                    <div class="card-body">
+                        <h5 class="card-title">Dogs</h5>
+                        <p>Loyal and loving, dogs are the best friends you can have.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="du2.jpg" class="card-img-top" alt="Ducks">
+                    <div class="card-body">
+                        <h5 class="card-title">Ducks</h5>
+                        <p>Friendly and sociable, ducks are a great addition to any farm or backyard.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="ch1.jpg" class="card-img-top" alt="Chicks">
+                    <div class="card-body">
+                        <h5 class="card-title">Chicks</h5>
+                        <p>Small, cute, and easy to care for, chicks are a joy to raise.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2025 Pawfect Haven. All Rights Reserved.</p>
+        <p>Contact us: <a href="mailto:info@pawfectheaven.com">info@pawfectheaven.com</a></p>
+    </footer>
+
+</body>
+</html>
